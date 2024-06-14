@@ -25,8 +25,6 @@ dependencies {
     exclude("io.leangen.geantyref")
   }
 
-  modImplementation(libs.adventurePlatformFabric)
-  include(libs.adventurePlatformFabric)
 
   modImplementation(libs.cloudFabric)
   include(libs.cloudFabric)

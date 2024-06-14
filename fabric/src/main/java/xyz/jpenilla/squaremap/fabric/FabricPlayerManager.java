@@ -19,7 +19,7 @@ public final class FabricPlayerManager extends AbstractPlayerManager {
 
     @Override
     public Component displayName(final ServerPlayer player) {
-        return player.getDisplayName().asComponent();
+        return (Component) player.getDisplayName();
     }
 
     @Override

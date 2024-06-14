@@ -30,7 +30,7 @@ public interface HtmlComponentSerializer extends ComponentEncoder<Component, Str
 
     @ApiStatus.Internal
     interface Provider {
-        HtmlComponentSerializer create(ComponentFlattener flattener);
+        HtmlComponentSerializer create(final ComponentFlattener flattener);
     }
 
 }

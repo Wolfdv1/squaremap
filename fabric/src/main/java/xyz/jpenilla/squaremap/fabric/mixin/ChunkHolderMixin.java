@@ -12,7 +12,7 @@ import xyz.jpenilla.squaremap.fabric.event.MapUpdateEvents;
 @Mixin(ChunkHolder.class)
 abstract class ChunkHolderMixin {
     @Inject(
-        method = "replaceProtoChunk(Lnet/minecraft/world/level/chunk/ImposterProtoChunk;)V",
+        method = "Lnet/minecraft/server/level/GenerationChunkHolder;replaceProtoChunk(Lnet/minecraft/world/level/chunk/ImposterProtoChunk;)V",
         at = @At("TAIL")
     )
     void chunkGenerated(ImposterProtoChunk imposter, CallbackInfo ci) {

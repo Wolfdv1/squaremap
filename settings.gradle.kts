@@ -22,10 +22,10 @@ rootProject.name = "squaremap"
 
 setupSubproject("api")
 setupSubproject("common")
-setupSubproject("paper")
+//setupSubproject("paper")
 setupSubproject("fabric")
-setupSubproject("neoforge")
-setupSubproject("sponge")
+//setupSubproject("neoforge")
+//setupSubproject("sponge")
 
 fun setupSubproject(moduleName: String) {
   val name = "squaremap-$moduleName"
