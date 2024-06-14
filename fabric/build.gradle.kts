@@ -10,6 +10,9 @@ repositories {
       includeGroup("org.ladysnake.cardinal-components-api")
     }
   }
+  flatDir{
+    dirs("libs") //for testing with latest adventure-platform-fabric SNAPSHOT
+  }
 }
 
 dependencies {
@@ -25,6 +28,8 @@ dependencies {
     exclude("io.leangen.geantyref")
   }
 
+  modImplementation(libs.adventurePlatformFabric)
+  include(libs.adventurePlatformFabric)
 
   modImplementation(libs.cloudFabric)
   include(libs.cloudFabric)

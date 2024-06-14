@@ -1,9 +1,12 @@
 package xyz.jpenilla.squaremap.fabric.inject.module;
 
 import com.google.inject.AbstractModule;
+import com.google.inject.Provides;
 import java.nio.file.Path;
 import net.fabricmc.loader.api.FabricLoader;
 import net.fabricmc.loader.api.ModContainer;
+import net.kyori.adventure.platform.fabric.FabricServerAudiences;
+import net.kyori.adventure.text.flattener.ComponentFlattener;
 import org.checkerframework.checker.nullness.qual.NonNull;
 import org.checkerframework.framework.qual.DefaultQualifier;
 import xyz.jpenilla.squaremap.common.AbstractPlayerManager;
@@ -43,5 +46,10 @@ public final class FabricModule extends AbstractModule {
 
         this.bind(ModContainer.class)
             .toInstance(FabricLoader.getInstance().getModContainer("squaremap").orElseThrow());
+    }
+
+    @Provides
+    public ComponentFlattener componentFlattener(final FabricServerAccess serverAccess) {
+        return FabricServerAudiences.of(serverAccess.requireServer()).flattener();
     }
 }

@@ -37,6 +37,7 @@
         "fabric": "*",
         "fabricloader": ">=0.15.11",
         "minecraft": "1.21",
-        "cloud": "*"
+        "cloud": "*",
+        "adventure-platform-fabric": "*"
     }
 }

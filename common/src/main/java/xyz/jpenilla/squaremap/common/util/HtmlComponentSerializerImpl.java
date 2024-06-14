@@ -123,7 +123,7 @@ final class HtmlComponentSerializerImpl implements HtmlComponentSerializer {
     public static final class Provider implements HtmlComponentSerializer.Provider {
         @Override
         public HtmlComponentSerializer create(final ComponentFlattener flattener) {
-            return new HtmlComponentSerializerImpl(flattener.toBuilder().build());
+            return new HtmlComponentSerializerImpl(flattener);
         }
     }
 }
