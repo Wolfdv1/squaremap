@@ -21,7 +21,7 @@ public class FabricCommander implements Commander, ForwardingAudience.Single {
 
     @Override
     public Audience audience() {
-        return (Audience) this.stack;
+        return this.stack;
     }
 
     @Override

@@ -19,7 +19,7 @@ plugins {
 }
 
 rootProject.name = "squaremap"
-
+//testing for fabric only atm
 setupSubproject("api")
 setupSubproject("common")
 //setupSubproject("paper")
