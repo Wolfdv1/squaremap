@@ -10,9 +10,7 @@ repositories {
       includeGroup("org.ladysnake.cardinal-components-api")
     }
   }
-  flatDir{
-    dirs("libs") //for testing with latest adventure-platform-fabric SNAPSHOT
-  }
+  mavenLocal()
 }
 
 dependencies {

@@ -1,0 +1,489 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "group": "net.kyori",
+    "module": "adventure-platform-fabric",
+    "version": "5.14.0-SNAPSHOT",
+    "attributes": {
+      "org.gradle.status": "integration"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "8.7"
+    }
+  },
+  "variants": [
+    {
+      "name": "apiElements",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.jvm.version": 21,
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-api"
+      },
+      "dependencies": [
+        {
+          "group": "com.google.auto.service",
+          "module": "auto-service-annotations",
+          "version": {
+            "requires": "1.1.1"
+          }
+        },
+        {
+          "group": "net.kyori",
+          "module": "adventure-key",
+          "version": {
+            "requires": "4.17.0"
+          },
+          "excludes": [
+            {
+              "group": "org.slf4j",
+              "module": "slf4j-api"
+            }
+          ]
+        },
+        {
+          "group": "net.kyori",
+          "module": "adventure-api",
+          "version": {
+            "requires": "4.17.0"
+          },
+          "excludes": [
+            {
+              "group": "org.slf4j",
+              "module": "slf4j-api"
+            }
+          ]
+        },
+        {
+          "group": "net.kyori",
+          "module": "adventure-text-logger-slf4j",
+          "version": {
+            "requires": "4.17.0"
+          },
+          "excludes": [
+            {
+              "group": "org.slf4j",
+              "module": "slf4j-api"
+            }
+          ]
+        },
+        {
+          "group": "net.kyori",
+          "module": "adventure-text-minimessage",
+          "version": {
+            "requires": "4.17.0"
+          },
+          "excludes": [
+            {
+              "group": "org.slf4j",
+              "module": "slf4j-api"
+            }
+          ]
+        },
+        {
+          "group": "net.kyori",
+          "module": "adventure-text-serializer-plain",
+          "version": {
+            "requires": "4.17.0"
+          },
+          "excludes": [
+            {
+              "group": "org.slf4j",
+              "module": "slf4j-api"
+            }
+          ]
+        },
+        {
+          "group": "net.kyori",
+          "module": "adventure-text-serializer-ansi",
+          "version": {
+            "requires": "4.17.0"
+          },
+          "excludes": [
+            {
+              "group": "org.slf4j",
+              "module": "slf4j-api"
+            }
+          ]
+        },
+        {
+          "group": "net.kyori",
+          "module": "adventure-platform-api",
+          "version": {
+            "requires": "4.3.3"
+          },
+          "excludes": [
+            {
+              "group": "com.google.code.gson",
+              "module": "*"
+            }
+          ]
+        },
+        {
+          "group": "net.kyori",
+          "module": "adventure-text-serializer-gson",
+          "version": {
+            "requires": "4.17.0"
+          },
+          "excludes": [
+            {
+              "group": "com.google.code.gson",
+              "module": "*"
+            }
+          ]
+        },
+        {
+          "group": "net.fabricmc.fabric-api",
+          "module": "fabric-api-bom",
+          "version": {
+            "requires": "0.100.1+1.21"
+          },
+          "attributes": {
+            "org.gradle.category": "platform"
+          }
+        },
+        {
+          "group": "net.fabricmc.fabric-api",
+          "module": "fabric-api-base"
+        }
+      ],
+      "files": [
+        {
+          "name": "adventure-platform-fabric-5.14.0-SNAPSHOT.jar",
+          "url": "adventure-platform-fabric-5.14.0-SNAPSHOT.jar",
+          "size": 907188,
+          "sha512": "4b0af4473c9612ccfd32b735e5ca546bc87bb42d3641b00a0ef5baea4fab62453224ac8470a7fa0e031a904d8452cb01b0a22517c0e2a10fa67eb358f812a0b7",
+          "sha256": "4a3db3cd758667b147f7bdc65a3dad8eeac1c998944cd287febc706eaf94c027",
+          "sha1": "d9e304e6c15be3c48253b38222851f2e23a260d4",
+          "md5": "19904a99a1600b7fb7315b923cad7530"
+        }
+      ]
+    },
+    {
+      "name": "runtimeElements",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.jvm.version": 21,
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-runtime"
+      },
+      "dependencies": [
+        {
+          "group": "net.kyori",
+          "module": "adventure-key",
+          "version": {
+            "requires": "4.17.0"
+          },
+          "excludes": [
+            {
+              "group": "org.slf4j",
+              "module": "slf4j-api"
+            }
+          ]
+        },
+        {
+          "group": "net.kyori",
+          "module": "adventure-api",
+          "version": {
+            "requires": "4.17.0"
+          },
+          "excludes": [
+            {
+              "group": "org.slf4j",
+              "module": "slf4j-api"
+            }
+          ]
+        },
+        {
+          "group": "net.kyori",
+          "module": "adventure-text-logger-slf4j",
+          "version": {
+            "requires": "4.17.0"
+          },
+          "excludes": [
+            {
+              "group": "org.slf4j",
+              "module": "slf4j-api"
+            }
+          ]
+        },
+        {
+          "group": "net.kyori",
+          "module": "adventure-text-minimessage",
+          "version": {
+            "requires": "4.17.0"
+          },
+          "excludes": [
+            {
+              "group": "org.slf4j",
+              "module": "slf4j-api"
+            }
+          ]
+        },
+        {
+          "group": "net.kyori",
+          "module": "adventure-text-serializer-plain",
+          "version": {
+            "requires": "4.17.0"
+          },
+          "excludes": [
+            {
+              "group": "org.slf4j",
+              "module": "slf4j-api"
+            }
+          ]
+        },
+        {
+          "group": "net.kyori",
+          "module": "adventure-text-serializer-ansi",
+          "version": {
+            "requires": "4.17.0"
+          },
+          "excludes": [
+            {
+              "group": "org.slf4j",
+              "module": "slf4j-api"
+            }
+          ]
+        },
+        {
+          "group": "net.kyori",
+          "module": "adventure-platform-api",
+          "version": {
+            "requires": "4.3.3"
+          },
+          "excludes": [
+            {
+              "group": "com.google.code.gson",
+              "module": "*"
+            }
+          ]
+        },
+        {
+          "group": "net.kyori",
+          "module": "adventure-text-serializer-gson",
+          "version": {
+            "requires": "4.17.0"
+          },
+          "excludes": [
+            {
+              "group": "com.google.code.gson",
+              "module": "*"
+            }
+          ]
+        },
+        {
+          "group": "net.fabricmc.fabric-api",
+          "module": "fabric-api-bom",
+          "version": {
+            "requires": "0.100.1+1.21"
+          },
+          "attributes": {
+            "org.gradle.category": "platform"
+          }
+        },
+        {
+          "group": "net.fabricmc.fabric-api",
+          "module": "fabric-api-base"
+        },
+        {
+          "group": "net.fabricmc.fabric-api",
+          "module": "fabric-networking-api-v1"
+        },
+        {
+          "group": "net.fabricmc.fabric-api",
+          "module": "fabric-command-api-v2"
+        },
+        {
+          "group": "net.fabricmc",
+          "module": "fabric-loader",
+          "version": {
+            "requires": "0.15.11"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "adventure-platform-fabric-5.14.0-SNAPSHOT.jar",
+          "url": "adventure-platform-fabric-5.14.0-SNAPSHOT.jar",
+          "size": 907188,
+          "sha512": "4b0af4473c9612ccfd32b735e5ca546bc87bb42d3641b00a0ef5baea4fab62453224ac8470a7fa0e031a904d8452cb01b0a22517c0e2a10fa67eb358f812a0b7",
+          "sha256": "4a3db3cd758667b147f7bdc65a3dad8eeac1c998944cd287febc706eaf94c027",
+          "sha1": "d9e304e6c15be3c48253b38222851f2e23a260d4",
+          "md5": "19904a99a1600b7fb7315b923cad7530"
+        }
+      ]
+    },
+    {
+      "name": "javadocElements",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "javadoc",
+        "org.gradle.usage": "java-runtime"
+      },
+      "dependencies": [
+        {
+          "group": "com.google.auto.service",
+          "module": "auto-service-annotations",
+          "version": {
+            "requires": "1.1.1"
+          }
+        },
+        {
+          "group": "net.kyori",
+          "module": "adventure-key",
+          "version": {
+            "requires": "4.17.0"
+          },
+          "excludes": [
+            {
+              "group": "org.slf4j",
+              "module": "slf4j-api"
+            }
+          ]
+        },
+        {
+          "group": "net.kyori",
+          "module": "adventure-api",
+          "version": {
+            "requires": "4.17.0"
+          },
+          "excludes": [
+            {
+              "group": "org.slf4j",
+              "module": "slf4j-api"
+            }
+          ]
+        },
+        {
+          "group": "net.kyori",
+          "module": "adventure-text-logger-slf4j",
+          "version": {
+            "requires": "4.17.0"
+          },
+          "excludes": [
+            {
+              "group": "org.slf4j",
+              "module": "slf4j-api"
+            }
+          ]
+        },
+        {
+          "group": "net.kyori",
+          "module": "adventure-text-minimessage",
+          "version": {
+            "requires": "4.17.0"
+          },
+          "excludes": [
+            {
+              "group": "org.slf4j",
+              "module": "slf4j-api"
+            }
+          ]
+        },
+        {
+          "group": "net.kyori",
+          "module": "adventure-text-serializer-plain",
+          "version": {
+            "requires": "4.17.0"
+          },
+          "excludes": [
+            {
+              "group": "org.slf4j",
+              "module": "slf4j-api"
+            }
+          ]
+        },
+        {
+          "group": "net.kyori",
+          "module": "adventure-text-serializer-ansi",
+          "version": {
+            "requires": "4.17.0"
+          },
+          "excludes": [
+            {
+              "group": "org.slf4j",
+              "module": "slf4j-api"
+            }
+          ]
+        },
+        {
+          "group": "net.kyori",
+          "module": "adventure-platform-api",
+          "version": {
+            "requires": "4.3.3"
+          },
+          "excludes": [
+            {
+              "group": "com.google.code.gson",
+              "module": "*"
+            }
+          ]
+        },
+        {
+          "group": "net.kyori",
+          "module": "adventure-text-serializer-gson",
+          "version": {
+            "requires": "4.17.0"
+          },
+          "excludes": [
+            {
+              "group": "com.google.code.gson",
+              "module": "*"
+            }
+          ]
+        },
+        {
+          "group": "net.fabricmc.fabric-api",
+          "module": "fabric-api-bom",
+          "version": {
+            "requires": "0.100.1+1.21"
+          },
+          "attributes": {
+            "org.gradle.category": "platform"
+          }
+        },
+        {
+          "group": "net.fabricmc.fabric-api",
+          "module": "fabric-api-base"
+        }
+      ],
+      "files": [
+        {
+          "name": "adventure-platform-fabric-5.14.0-SNAPSHOT-javadoc.jar",
+          "url": "adventure-platform-fabric-5.14.0-SNAPSHOT-javadoc.jar",
+          "size": 139128,
+          "sha512": "603ce4e39090303c6f209df0e8b0d6b331e4277334a7ee9f3e236126e7f4e5d8bd6afde8028a9cb51d3e4ffeff8c2117a41fa6cbbd2bcd2a62e88600472c1528",
+          "sha256": "b38f4b194e1f7c9c2ff45312b7096d13a193dbef93e8dc4f968e0b7454fc1543",
+          "sha1": "b78f2f836816fb348679449c7a8a07824c73a0c0",
+          "md5": "f33f6936af8ca7714ba4e4fffc552120"
+        }
+      ]
+    },
+    {
+      "name": "sourcesElements",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "sources",
+        "org.gradle.usage": "java-runtime"
+      },
+      "files": [
+        {
+          "name": "adventure-platform-fabric-5.14.0-SNAPSHOT-sources.jar",
+          "url": "adventure-platform-fabric-5.14.0-SNAPSHOT-sources.jar",
+          "size": 201430,
+          "sha512": "d276f8107f48fd5d2f07897758ea47f55499181f30ea3ca3766bde3486cd4cb6875c2a0082bbb10b426afb5e1a532bc30fa052a1b4a2a609f3d8334d010cd43b",
+          "sha256": "f598882561f9a93c83ebefd14bdc673342e79195ed91a958a9ce1adfb11e4bd5",
+          "sha1": "c875dcfbaa3f2e8c143467ab1afc6e8271cdf0b6",
+          "md5": "d2be035498b4c39062342377e1f94644"
+        }
+      ]
+    }
+  ]
+}
